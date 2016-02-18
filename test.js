@@ -1,8 +1,8 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(t => {
 	process.chdir('fixture');
-	t.regexTest(/fixture\/fixture\.js$/, fn('./fixture'));
-	t.is(fn('./fixture2'), null);
+	t.regex(m('./fixture'), /fixture\/fixture\.js$/);
+	t.is(m('./fixture2'), null);
 });
