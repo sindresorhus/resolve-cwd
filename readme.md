@@ -1,8 +1,6 @@
 # resolve-cwd [![Build Status](https://travis-ci.org/sindresorhus/resolve-cwd.svg?branch=master)](https://travis-ci.org/sindresorhus/resolve-cwd)
 
-> Resolve the path of a module like [`require.resolve()`](http://nodejs.org/api/globals.html#globals_require_resolve) but from the current working directory
-
-Unlike `require.resolve()` it returns `null` instead of throwing when the module can't be found.
+> Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from the current working directory
 
 
 ## Install
@@ -32,6 +30,12 @@ resolveCwd('./foo');
 
 ### resolveCwd(moduleId)
 
+Like `require()`, throws when the module can't be found.
+
+### resolveCwd.silent(moduleId)
+
+Returns `null` instead of throwing when the module can't be found.
+
 #### moduleId
 
 Type: `string`
@@ -50,4 +54,4 @@ What you would use in `require()`.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

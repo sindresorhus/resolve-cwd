@@ -1,6 +1,5 @@
 'use strict';
-var resolveFrom = require('resolve-from');
+const resolveFrom = require('resolve-from');
 
-module.exports = function (moduleId) {
-	return resolveFrom('.', moduleId);
-};
+module.exports = moduleId => resolveFrom(process.cwd(), moduleId);
+module.exports.silent = moduleId => resolveFrom.silent(process.cwd(), moduleId);

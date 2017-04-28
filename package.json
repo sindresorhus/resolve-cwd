@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -25,14 +25,14 @@
     "module",
     "from",
     "like",
-    "path",
     "cwd",
     "current",
     "working",
-    "directory"
+    "directory",
+    "import"
   ],
   "dependencies": {
-    "resolve-from": "^2.0.0"
+    "resolve-from": "^3.0.0"
   },
   "devDependencies": {
     "ava": "*",
