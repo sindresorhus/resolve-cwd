@@ -21,7 +21,7 @@ console.log(__dirname);
 console.log(process.cwd());
 //=> '/Users/sindresorhus/unicorn'
 
-resolveCwd('./foo');
+console.log(resolveCwd('./foo'));
 //=> '/Users/sindresorhus/unicorn/foo.js'
 ```
 
