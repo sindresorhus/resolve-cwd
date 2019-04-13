@@ -1,16 +1,16 @@
 import test from 'ava';
-import m from '.';
+import resolveCwd from '.';
 
 process.chdir('fixture');
 
 test('resolveCwd()', t => {
-	t.regex(m('./fixture'), /fixture\/fixture\.js$/);
+	t.regex(resolveCwd('./fixture'), /fixture\/fixture\.js$/);
 	t.throws(() => {
-		m('./nonexistent');
+		resolveCwd('./nonexistent');
 	});
 });
 
 test('resolveCwd.silent()', t => {
-	t.regex(m.silent('./fixture'), /fixture\/fixture\.js$/);
-	t.is(m.silent('./nonexistent'), null);
+	t.regex(resolveCwd.silent('./fixture'), /fixture\/fixture\.js$/);
+	t.is(resolveCwd.silent('./nonexistent'), undefined);
 });

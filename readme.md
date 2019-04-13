@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save resolve-cwd
+$ npm install resolve-cwd
 ```
 
 
@@ -34,7 +34,7 @@ Like `require()`, throws when the module can't be found.
 
 ### resolveCwd.silent(moduleId)
 
-Returns `null` instead of throwing when the module can't be found.
+Returns `undefined` instead of throwing when the module can't be found.
 
 #### moduleId
 
