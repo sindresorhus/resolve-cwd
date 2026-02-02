@@ -2,13 +2,11 @@
 
 > Resolve the path of a module like [`require.resolve()`](https://nodejs.org/api/globals.html#globals_require_resolve) but from the current working directory
 
-
 ## Install
 
+```sh
+npm install resolve-cwd
 ```
-$ npm install resolve-cwd
-```
-
 
 ## Usage
 
@@ -24,7 +22,6 @@ console.log(process.cwd());
 console.log(resolveCwd('./foo'));
 //=> '/Users/sindresorhus/unicorn/foo.js'
 ```
-
 
 ## API
 
@@ -42,7 +39,6 @@ Type: `string`
 
 What you would use in `require()`.
 
-
 ## Related
 
 - [resolve-from](https://github.com/sindresorhus/resolve-from) - Resolve the path of a module from a given path
@@ -51,16 +47,3 @@ What you would use in `require()`.
 - [resolve-pkg](https://github.com/sindresorhus/resolve-pkg) - Resolve the path of a package regardless of it having an entry point
 - [import-lazy](https://github.com/sindresorhus/import-lazy) - Import a module lazily
 - [resolve-global](https://github.com/sindresorhus/resolve-global) - Resolve the path of a globally installed module
-
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-resolve-cwd?utm_source=npm-resolve-cwd&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
